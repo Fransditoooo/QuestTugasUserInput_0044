@@ -262,3 +262,33 @@ fun FormBiodata() {
                             saatDiubah = { webSkill = it }
                         )
                     }
+
+                    Button(
+                        onClick = {
+                            Toast.makeText(context, "Biodata berhasil diproses!", Toast.LENGTH_SHORT).show()
+                        },
+                        enabled = valid,
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .height(
+                                dimensionResource(R.dimen.tinggi_tombol)
+                            ),
+                        shape = RoundedCornerShape(
+                            dimensionResource(R.dimen.radius_tombol)
+                        ),
+                        colors = ButtonDefaults.buttonColors(
+                            disabledContainerColor = colorResource(
+                                R.color.warna_tombol_nonaktif
+                            ),
+                            disabledContentColor = colorResource(
+                                R.color.warna_teks_tombol_nonaktif
+                            )
+                        )
+                    ) {
+                        Text(stringResource(R.string.tombol_lanjut))
+                    }
+                }
+            }
+        }
+    }
+}
