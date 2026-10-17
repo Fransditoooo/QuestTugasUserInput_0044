@@ -47,3 +47,23 @@ fun FormBiodata() {
             pengalaman.isNotBlank() &&
             (androidSkill || uiuxSkill || webSkill)
 
+    Scaffold(
+        containerColor = colorResource(R.color.warna_latar)
+    ) { paddingScaffold ->
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(paddingScaffold)
+        ) {
+            Image(
+                painter = painterResource(R.drawable.header_spider),
+                contentDescription = stringResource(
+                    R.string.deskripsi_gambar_header
+                ),
+                contentScale = ContentScale.Crop,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(dimensionResource(R.dimen.tinggi_header))
+                    .align(Alignment.TopCenter)
+            )
+
