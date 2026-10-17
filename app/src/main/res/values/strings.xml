@@ -9,5 +9,11 @@
     <string name="pengalaman">Experience</string>
     <string name="label_skill">Pilih Skill Anda :</string>
     <string name="skill_android">Android</string>
+    <string name="skill_uiux">UI/UX</string>
+    <string name="skill_web">Web</string>
+    <string name="tombol_lanjut">Proceed</string>
+    <string name="deskripsi_gambar_header">Gambar dekorasi header</string>
+    <string name="simbol_kalender">📅</string>
+    <string name="format_tanggal">%1$d/%2$d/%3$d</string>
 
 </resources>
