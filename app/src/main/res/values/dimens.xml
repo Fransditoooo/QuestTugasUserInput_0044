@@ -1,5 +1,8 @@
 <resources>
     <dimen name="tinggi_header">230dp</dimen>
     <dimen name="posisi_kartu">168dp</dimen>
+    <dimen name="padding_layar">16dp</dimen>
+    <dimen name="radius_kartu">22dp</dimen>
+    <dimen name="elevasi_kartu">8dp</dimen>
 
 </resources>
