@@ -118,3 +118,29 @@ fun FormBiodata() {
                         style = MaterialTheme.typography.bodySmall
                     )
 
+                    Row(
+                        horizontalArrangement = Arrangement.spacedBy(
+                            dimensionResource(R.dimen.jarak_field)
+                        )
+                    ) {
+                        OutlinedTextField(
+                            value = namaDepan,
+                            onValueChange = { namaDepan = it },
+                            label = {
+                                Text(stringResource(R.string.nama_depan))
+                            },
+                            singleLine = true,
+                            modifier = Modifier.weight(1f)
+                        )
+
+                        OutlinedTextField(
+                            value = namaBelakang,
+                            onValueChange = { namaBelakang = it },
+                            label = {
+                                Text(stringResource(R.string.nama_belakang))
+                            },
+                            singleLine = true,
+                            modifier = Modifier.weight(1f)
+                        )
+                    }
+
