@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="tinggi_header">230dp</dimen>
+    <dimen name="posisi_kartu">168dp</dimen>
+
+</resources>
