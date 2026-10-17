@@ -154,3 +154,21 @@ fun FormBiodata() {
                         modifier = Modifier.fillMaxWidth()
                     )
 
+                    Row(
+                        horizontalArrangement = Arrangement.spacedBy(
+                            dimensionResource(R.dimen.jarak_field)
+                        )
+                    ) {
+                        Box(modifier = Modifier.weight(1f)) {
+                            OutlinedTextField(
+                                value = tanggalLahir,
+                                onValueChange = {},
+                                readOnly = true,
+                                enabled = false,
+                                label = {
+                                    Text(
+                                        stringResource(R.string.tanggal_lahir)
+                                    )
+                                },
+                                modifier = Modifier.fillMaxWidth()
+                            )
