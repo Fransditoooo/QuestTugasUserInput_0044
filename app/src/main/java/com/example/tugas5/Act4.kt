@@ -87,3 +87,19 @@ fun FormBiodata() {
                     defaultElevation = dimensionResource(R.dimen.elevasi_kartu)
                 )
             ) {
+                Column(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .heightIn(
+                            max = dimensionResource(
+                                R.dimen.tinggi_maksimum_kartu
+                            )
+                        )
+                        .verticalScroll(rememberScrollState())
+                        .padding(
+                            dimensionResource(R.dimen.padding_kartu)
+                        ),
+                    verticalArrangement = Arrangement.spacedBy(
+                        dimensionResource(R.dimen.jarak_kolom)
+                    )
+                ) {
