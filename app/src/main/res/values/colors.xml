@@ -4,5 +4,6 @@
     <color name="warna_judul">#673AB7</color>
     <color name="warna_teks">#25232A</color>
     <color name="warna_teks_sekunder">#85818A</color>
-
+    <color name="warna_tombol_nonaktif">#E2E2E2</color>
+    <color name="warna_teks_tombol_nonaktif">#FFFFFF</color>
 </resources>
