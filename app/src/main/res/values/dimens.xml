@@ -6,5 +6,7 @@
     <dimen name="elevasi_kartu">8dp</dimen>
     <dimen name="tinggi_maksimum_kartu">560dp</dimen>
     <dimen name="padding_kartu">16dp</dimen>
+    <dimen name="jarak_kolom">12dp</dimen>
+    <dimen name="jarak_field">8dp</dimen>
 
 </resources>
