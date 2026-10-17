@@ -172,3 +172,22 @@ fun FormBiodata() {
                                 },
                                 modifier = Modifier.fillMaxWidth()
                             )
+
+                            Box(
+                                modifier = Modifier
+                                    .matchParentSize()
+                                    .clickable {
+                                        val calendar = Calendar.getInstance()
+
+                                        DatePickerDialog(
+                                            context,
+                                            { _, year, month, day ->
+                                                tanggalLahir = String.format("%02d/%02d/%d", day, month + 1, year)
+                                            },
+                                            calendar.get(Calendar.YEAR),
+                                            calendar.get(Calendar.MONTH),
+                                            calendar.get(Calendar.DAY_OF_MONTH)
+                                        ).show()
+                                    }
+                            )
+                        }
