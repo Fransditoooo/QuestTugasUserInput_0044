@@ -191,3 +191,44 @@ fun FormBiodata() {
                                     }
                             )
                         }
+
+                        Box(modifier = Modifier.weight(1f)) {
+                            OutlinedTextField(
+                                value = pengalaman,
+                                onValueChange = {},
+                                readOnly = true,
+                                enabled = false,
+                                label = {
+                                    Text(
+                                        stringResource(R.string.pengalaman)
+                                    )
+                                },
+                                modifier = Modifier.fillMaxWidth()
+                            )
+
+                            Box(
+                                modifier = Modifier
+                                    .matchParentSize()
+                                    .clickable {
+                                        dropdownTerbuka = true
+                                    }
+                            )
+
+                            DropdownMenu(
+                                expanded = dropdownTerbuka,
+                                onDismissRequest = {
+                                    dropdownTerbuka = false
+                                }
+                            ) {
+                                pilihanPengalaman.forEach { pilihan ->
+                                    DropdownMenuItem(
+                                        text = { Text(pilihan) },
+                                        onClick = {
+                                            pengalaman = pilihan
+                                            dropdownTerbuka = false
+                                        }
+                                    )
+                                }
+                            }
+                        }
+                    }
