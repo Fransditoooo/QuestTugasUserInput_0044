@@ -67,3 +67,23 @@ fun FormBiodata() {
                     .align(Alignment.TopCenter)
             )
 
+            Card(
+                modifier = Modifier
+                    .align(Alignment.TopCenter)
+                    .padding(
+                        top = dimensionResource(R.dimen.posisi_kartu)
+                    )
+                    .fillMaxWidth()
+                    .padding(
+                        horizontal = dimensionResource(R.dimen.padding_layar)
+                    ),
+                shape = RoundedCornerShape(
+                    dimensionResource(R.dimen.radius_kartu)
+                ),
+                colors = CardDefaults.cardColors(
+                    containerColor = colorResource(R.color.warna_kartu)
+                ),
+                elevation = CardDefaults.cardElevation(
+                    defaultElevation = dimensionResource(R.dimen.elevasi_kartu)
+                )
+            ) {
