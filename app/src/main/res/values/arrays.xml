@@ -1,6 +1,7 @@
 <resources>
     <string-array name="pilihan_pengalaman">
         <item>Pemula</item>
+        <item>Menengah</item>
 
     </string-array>
 </resources>
