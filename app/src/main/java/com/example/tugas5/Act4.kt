@@ -111,3 +111,10 @@ fun FormBiodata() {
                         fontWeight = FontWeight.Bold
                     )
 
+                    Text(
+                        text = stringResource(R.string.subjudul_form),
+                        modifier = Modifier.fillMaxWidth(),
+                        color = colorResource(R.color.warna_teks_sekunder),
+                        style = MaterialTheme.typography.bodySmall
+                    )
+
