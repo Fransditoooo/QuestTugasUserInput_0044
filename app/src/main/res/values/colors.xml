@@ -1,5 +1,8 @@
 <resources>
     <color name="warna_latar">#FFF8F8</color>
     <color name="warna_kartu">#FFFFFF</color>
+    <color name="warna_judul">#673AB7</color>
+    <color name="warna_teks">#25232A</color>
+    <color name="warna_teks_sekunder">#85818A</color>
 
 </resources>
