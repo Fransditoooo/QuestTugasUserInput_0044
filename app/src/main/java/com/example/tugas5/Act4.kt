@@ -232,3 +232,33 @@ fun FormBiodata() {
                             }
                         }
                     }
+
+                    Text(
+                        text = stringResource(R.string.label_skill),
+                        color = colorResource(R.color.warna_teks),
+                        fontWeight = FontWeight.SemiBold
+                    )
+
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.SpaceBetween,
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        SkillItem(
+                            nama = stringResource(R.string.skill_android),
+                            dipilih = androidSkill,
+                            saatDiubah = { androidSkill = it }
+                        )
+
+                        SkillItem(
+                            nama = stringResource(R.string.skill_uiux),
+                            dipilih = uiuxSkill,
+                            saatDiubah = { uiuxSkill = it }
+                        )
+
+                        SkillItem(
+                            nama = stringResource(R.string.skill_web),
+                            dipilih = webSkill,
+                            saatDiubah = { webSkill = it }
+                        )
+                    }
