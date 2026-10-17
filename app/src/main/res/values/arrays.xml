@@ -1,0 +1,6 @@
+<resources>
+    <string-array name="pilihan_pengalaman">
+        <item>Pemula</item>
+
+    </string-array>
+</resources>
