@@ -2,6 +2,6 @@
     <string-array name="pilihan_pengalaman">
         <item>Pemula</item>
         <item>Menengah</item>
-
+        <item>Berpengalaman</item>
     </string-array>
 </resources>
