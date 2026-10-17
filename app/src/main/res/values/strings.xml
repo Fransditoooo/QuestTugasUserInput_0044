@@ -5,6 +5,9 @@
     <string name="nama_depan">Nama Depan</string>
     <string name="nama_belakang">Nama Belakang</string>
     <string name="email">Email</string>
-
+    <string name="tanggal_lahir">Tgl Lahir</string>
+    <string name="pengalaman">Experience</string>
+    <string name="label_skill">Pilih Skill Anda :</string>
+    <string name="skill_android">Android</string>
 
 </resources>
