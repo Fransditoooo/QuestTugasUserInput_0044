@@ -144,3 +144,13 @@ fun FormBiodata() {
                         )
                     }
 
+                    OutlinedTextField(
+                        value = email,
+                        onValueChange = { email = it },
+                        label = {
+                            Text(stringResource(R.string.email))
+                        },
+                        singleLine = true,
+                        modifier = Modifier.fillMaxWidth()
+                    )
+
