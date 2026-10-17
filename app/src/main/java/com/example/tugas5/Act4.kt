@@ -292,3 +292,22 @@ fun FormBiodata() {
         }
     }
 }
+
+@Composable
+fun SkillItem(
+    nama: String,
+    dipilih: Boolean,
+    saatDiubah: (Boolean) -> Unit
+) {
+    Row(verticalAlignment = Alignment.CenterVertically) {
+        Checkbox(
+            checked = dipilih,
+            onCheckedChange = saatDiubah
+        )
+        Text(
+            text = nama,
+            color = colorResource(R.color.warna_teks),
+            style = MaterialTheme.typography.labelSmall
+        )
+    }
+}
