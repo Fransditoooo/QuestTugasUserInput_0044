@@ -32,3 +32,18 @@ fun FormBiodata() {
     var tanggalLahir by remember { mutableStateOf("") }
     var pengalaman by remember { mutableStateOf("") }
 
+    var androidSkill by remember { mutableStateOf(false) }
+    var uiuxSkill by remember { mutableStateOf(false) }
+    var webSkill by remember { mutableStateOf(false) }
+    var dropdownTerbuka by remember { mutableStateOf(false) }
+
+    val pilihanPengalaman =
+        stringArrayResource(R.array.pilihan_pengalaman)
+
+    val valid = namaDepan.isNotBlank() &&
+            namaBelakang.isNotBlank() &&
+            email.isNotBlank() &&
+            tanggalLahir.isNotBlank() &&
+            pengalaman.isNotBlank() &&
+            (androidSkill || uiuxSkill || webSkill)
+
