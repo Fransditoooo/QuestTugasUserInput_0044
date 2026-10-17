@@ -103,3 +103,11 @@ fun FormBiodata() {
                         dimensionResource(R.dimen.jarak_kolom)
                     )
                 ) {
+                    Text(
+                        text = stringResource(R.string.judul_form),
+                        modifier = Modifier.fillMaxWidth(),
+                        color = colorResource(R.color.warna_judul),
+                        style = MaterialTheme.typography.headlineSmall,
+                        fontWeight = FontWeight.Bold
+                    )
+
